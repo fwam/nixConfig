@@ -1,3 +1,3 @@
 {
-  imports = [ ./shell ];
+  imports = [ ./shell ./gui ];
 }
