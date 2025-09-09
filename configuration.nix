@@ -1,6 +1,7 @@
 { pkgs, ... }:
 {
   nixpkgs.config.allowUnfree = true;
+  nix.package = pkgs.lixPackageSets.stable.lix; # I don't know why, but it started using nix again.
   nix.settings.experimental-features = "nix-command flakes";
 
   users.users.xenia = {
